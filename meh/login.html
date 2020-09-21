@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>LOGIN</title>
+	<meta charset="utf-8">
+	<meta name="World Animal Protection" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/jquery-3.4.1.min"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#btn1").click(function(){
+				$(".read").slideToggle("fast");
+				$("#btn1").hide("fast");
+			});
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body class="body">
+	<div ></div>
+	<div>
+		<header class="header">
+			<ul>
+		  		<li><a class="active" href="#home">Home</a></li>
+			  	<li><a href="aboutus.html">About Us</a></li>
+			  	<li><a href="#news">News and Facts</a></li>
+			  	<li><a href="#contact">Program</a></li>
+			  	<li><a href="#donate">Donate</a></li>
+			</ul>
+			<img src="img/logo.jpg" border="5px" alt="No image">
+		</header>
+	</div>
+	<div class="email">
+		<FORM>
+		<center>
+			<TABLE>
+				<TR>
+					<TD><LABEL style="margin-left: 20px;"> Email : </LABEL>
+				<INPUT type="text" id="email"> </TD>
+				</TR>
+				<br>
+				<TR>
+					<TD><LABEL for="password"> Password : </LABEL>
+				<INPUT class = "email" type="password" id="password"> </TD>
+				</TR>
+				<BR>
+				<TR>
+					<TD>
+				<button style="margin-left: 100px; margin-top: 10px;">Submit</button> </TD>
+				</TR>
+
+
+			</TABLE>
+			</center>
+
+	</FORM>
+	</div>
+</body>
+
+</HTML>

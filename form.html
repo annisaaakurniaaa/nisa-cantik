@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="bg1">
+<head>
+	<title>unicef</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="World animal preservation Donate">
+	<script type="text/javascript" src="js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<SCRIPT>
+		function show()
+		{
+		var fname = document.getElementById("txtbox1").value; 
+		var lname = document.getElementById("txtbox2").value; 
+		var idnumber = document.getElementById("txtbox3").value;
+		var age = document.getElementById("age").value;
+		var address = document.getElementById("address").value; 
+		var gender = document.getElementById("gender").value;
+		var subject = document.getElementById("subject").value;
+		confirm("You have entered:" + "\n Name : " + fname + " " + lname + "\n idnumber : " + idnumber + "\n Age : " + age + "\n Address : "+ address + "\n Gender : "+ gender + "\n subject matter : " + subject + "\n\n Do you want to confirm these details ?");
+		if (window.confirm('If you click "ok" you would finished registration form  . click Cancel to change your data for registration ')) 
+		{
+		window.location.href="abisregist.html";
+		}
+		}
+		
+		function changeColor(val)
+		{ 
+		 if((val.value=="")||(val.value==null))
+		{
+		val.style.background="red";
+		}
+		else
+		{
+		val.style.background="#FFFFFF";
+		}
+		}
+		</SCRIPT>
+</head>
+<body class="body">
+	<div>
+		<header class="nav" style="margin: -3% 0 0 0">
+			<ul>
+		  		<li><a href="landing.html">Home</a></li>
+			  	<li><a href="aboutus.html">About Us</a></li>
+			  	<li><a href="news.html">News and Facts</a></li>
+			  	<li><a class="active" href="#registration">Donate</a></li>
+			</ul> 
+		</header>
+	</div>
+	<div>
+		<center><H1 style="color: aliceblue;">Registration Form</H1></center><hr>
+<TABLE align="center" border="2" bordercolor="white" cellpadding="10px" bgcolor="beige">
+<TR>
+<TD>  First  name:  </TD>
+<TD> <INPUT type="text" name="name1" id="txtbox1" onblur="changeColor(this)"/> </TD>
+</TR> <TR>
+<TD>  Last  name:  </TD>
+<TD><INPUT type="text" name="name2" id="txtbox2" onblur="changeColor(this)"/></TD>
+</TR> <TR>
+	<TD> id number: </TD>
+	<TD> <input type="text" name="idnumber" id="txtbox3" onblur="changeColor(this)"/></TD>
+	</TR> <TR>
+<TD>  Age:  </TD>
+<TD> <INPUT type="text" name="age_box" id="age" onblur="changeColor(this)"/> </TD>
+</TR> <TR>
+<TD>  Address:</TD>
+<TD><TEXTAREA rows="5" name="address_box" id="address" onblur="changeColor(this)"></textarea></TD>
+</TR> <TR>
+<TD> Gender: </TD> <TD>
+<SELECT name="Gender" id="gender"> <OPTION value="Male">Male</OPTION> <OPTION value="Female">Female</option> </SELECT> </TD>
+</TR><TR>
+	<div class="form-group form-cek">
+<td> volunteer in :  </td>
+ <td>doctor <input type="radio" id="subject" value="doctor"> teacher <input type="radio" id="subject" value="teacher"> psychologist	<input type="radio" id="subject" value="psychologist"></td>
+</div>
+</TR> </TABLE>
+<BR/>
+<center><INPUT id="button" type="button" value="Register" onclick="show()"/></center>
+</BODY>
+	</div>
+</body>
+</html>
